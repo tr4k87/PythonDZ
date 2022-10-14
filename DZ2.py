@@ -1,13 +1,13 @@
 # Напишите программу, которая принимает на вход вещественное число и показывает сумму его цифр.
 
-# result = 0
-# n = input('Введите число ')
-# while not n.isdigit():
-#     n = input('Неверно ввел, введите число ')
-# n = (list(map(int, n)))
-# for i in n:
-#     result = result + n[i-1]
-# print(result)
+result = 0
+n = input('Введите число ')
+while not n.isdigit():
+    n = input('Неверно ввел, введите число ')
+n = (list(map(int, n)))
+for i in n:
+    result = result + n[i-1]
+print(result)
 
 # Напишите программу, которая принимает на вход число N и выдает набор произведений чисел от 1 до N.
 
@@ -60,20 +60,20 @@
 
 
 # Реализуйте алгоритм перемешивания списка.
-import random
-n = input('Введите количество элементов в списке ')
-while not n.isdigit():
-    n = input('Введите количество элементов в списке ')
-n = int(n)
-result = list()
-def add(n):
-    for i in range(1,n+1):
-        result.append(i)
-    return(result)
-def rand(n):
-    for i in range(1, n):
-        j = random.randint(1,n)
-        result[i] = j
-    return(result)
-print(add(n))
-print(rand(n))
+# import random
+# n = input('Введите количество элементов в списке ')
+# while not n.isdigit():
+#     n = input('Введите количество элементов в списке ')
+# n = int(n)
+# result = list()
+# def add(n):
+#     for i in range(1,n+1):
+#         result.append(i)
+#     return(result)
+# def rand(n):
+#     for i in range(1, n):
+#         j = random.randint(1,n)
+#         result[i] = j
+#     return(result)
+# print(add(n))
+# print(rand(n))
