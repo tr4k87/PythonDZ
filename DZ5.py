@@ -129,17 +129,17 @@ import random
 # print('-----')
 
 # Реализуйте RLE алгоритм: реализуйте модуль сжатия и восстановления данных.
-# with open('dz5in.txt', 'r') as data:
-#     a = data.read()
-# count = 1
-# for i in range(len(a)-1):
-#     if i <= len(a):
-#         if a[i] == a[i + 1]:
-#             count += 1
-#         else:
-#             print(f'{count}{a[i]}',end ='')
-#             count = 1
-# print(f'{count}{a[i]}')
+with open('dz5in.txt', 'r') as data:
+    a = data.read()
+count = 1
+for i in range(len(a)-1):
+    if i <= len(a):
+        if a[i] == a[i + 1]:
+            count += 1
+        else:
+            print(f'{count}{a[i]}',end ='')
+            count = 1
+print(f'{count}{a[i]}')
 
 a = '6a7b6e4w'
 b = ''
